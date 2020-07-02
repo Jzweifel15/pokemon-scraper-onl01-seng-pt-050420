@@ -9,6 +9,10 @@ class Pokemon
     @db = db
   end
   
-  
+  def save
+    sql <<-SQL
+      INSERT INTO pokemon
+    SQL
+  end
   
 end
